@@ -1,63 +1,68 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-zinc-950 dark:via-black dark:to-zinc-900">
+      <main className="flex flex-col items-center justify-center px-8 py-16 text-center max-w-4xl">
+        <div className="mb-8">
+          <h1 className="text-6xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Drasa
+            </span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-2xl text-gray-600 dark:text-gray-400 mb-2">
+            Learning Management System
+          </p>
+          <p className="text-lg text-gray-500 dark:text-gray-500">
+            Built with Django & Next.js
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          <Link
+            href="/dashboard"
+            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Go to Dashboard →
+          </Link>
+          <Link
+            href="/courses"
+            className="px-8 py-4 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white rounded-lg font-semibold text-lg hover:bg-gray-50 dark:hover:bg-zinc-800 transition-all duration-200 shadow-lg hover:shadow-xl border dark:border-zinc-800"
           >
-            Documentation
-          </a>
+            Browse Courses
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          <div className="p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md border dark:border-zinc-800">
+            <div className="text-4xl mb-3">📚</div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              Course Management
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Organize courses, modules, and learning materials
+            </p>
+          </div>
+
+          <div className="p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md border dark:border-zinc-800">
+            <div className="text-4xl mb-3">📝</div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              Assignments & Grading
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Create, submit, and grade assignments with ease
+            </p>
+          </div>
+
+          <div className="p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md border dark:border-zinc-800">
+            <div className="text-4xl mb-3">💬</div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              Discussions & Collaboration
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Engage in course discussions and announcements
+            </p>
+          </div>
         </div>
       </main>
     </div>
