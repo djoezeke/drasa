@@ -2,7 +2,7 @@
 import { defineConfig, defineDocs } from "fumadocs-mdx/config";
 import lastModified from "fumadocs-mdx/plugins/last-modified";
 var docs = defineDocs({
-  dir: "app/docs"
+  dir: "content/docs"
 });
 var source_config_default = defineConfig({
   mdxOptions: {

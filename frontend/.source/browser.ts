@@ -17,6 +17,6 @@ const create = browser<typeof Config, import("fumadocs-mdx/runtime/types").Inter
   }
 }>();
 const browserCollections = {
-  docs: create.doc("docs", {"index.mdx": () => import("../app/docs/index.mdx?collection=docs"), "release-notes.mdx": () => import("../app/docs/release-notes.mdx?collection=docs"), "versioning.mdx": () => import("../app/docs/versioning.mdx?collection=docs"), "about/index.mdx": () => import("../app/docs/about/index.mdx?collection=docs"), }),
+  docs: create.doc("docs", {"(drasa)/index.mdx": () => import("../content/docs/(drasa)/index.mdx?collection=docs"), "(drasa)/release-notes.mdx": () => import("../content/docs/(drasa)/release-notes.mdx?collection=docs"), "(drasa)/versioning.mdx": () => import("../content/docs/(drasa)/versioning.mdx?collection=docs"), "about/index.mdx": () => import("../content/docs/about/index.mdx?collection=docs"), "ui/index.mdx": () => import("../content/docs/ui/index.mdx?collection=docs"), }),
 };
 export default browserCollections;

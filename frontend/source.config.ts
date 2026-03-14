@@ -1,8 +1,8 @@
-import { defineCollections, defineConfig, defineDocs } from "fumadocs-mdx/config";
+import { defineConfig, defineDocs } from "fumadocs-mdx/config";
 import lastModified from 'fumadocs-mdx/plugins/last-modified';
 
 export const docs = defineDocs({
-    dir: "app/docs",
+    dir: 'content/docs',
 });
 
 export default defineConfig({

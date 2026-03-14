@@ -1,0 +1,10 @@
+{
+    "title": "Drasa",
+    "description": "Drasa Documentation",
+    "icon": "Building",
+    "root": true,
+    "pages": [
+        "---Introduction---",
+        "index"
+    ]
+}

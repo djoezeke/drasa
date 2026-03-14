@@ -1,0 +1,10 @@
+{
+    "root": true,
+    "title": "Drasa UI",
+    "description": "The default theme",
+    "icon": "PanelsTopLeft",
+    "pages": [
+        "---Introduction---",
+        "index"
+    ]
+}
