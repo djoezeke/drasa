@@ -1,0 +1,9 @@
+{
+    "title": "About Documentation",
+    "icon": "Building",
+    "description": "The Documentation",
+    "pages": [
+        "index"
+    ],
+    "root": true
+}

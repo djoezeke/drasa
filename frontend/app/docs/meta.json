@@ -1,0 +1,12 @@
+{
+    "title": "Documentation",
+    "icon": "Building",
+    "description": "The Documentation",
+    "pages": [
+        "index",
+        "about",
+        "release-notes",
+        "versioning"
+    ],
+    "root": true
+}
